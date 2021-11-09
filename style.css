@@ -77,8 +77,8 @@ input[type="text"]:focus-visible {
 }
 
 .blurbs .about-me {
-    font-size: 32px;
-    background: linear-gradient(90deg, #953, #E60);
-    background-clip: text;
+    -webkit-font-size: 32px;
+    -webkit-background: linear-gradient(90deg, #953, #E60);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
