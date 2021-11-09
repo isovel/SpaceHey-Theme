@@ -1,15 +1,16 @@
-/*:root {
+/*
+:root {
     --font-stack: 'Consolas', 'Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
 }
 
 * {
-font-family: var(--font-stack);
+    font-family: var(--font-stack);
 }
 
 body {
-background: #000000;
-color: #FFFFFF;
-transform: rotate3d(1, 2.0, 3.0, 10deg);
+    background: #000000;
+    color: #FFFFFF;
+    transform: rotate3d(1, 2.0, 3.0, 10deg);
 }
 
 nav,
@@ -19,12 +20,12 @@ footer {
 }
 
 nav {
-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 footer {
-border-radius: 0 0 20px 20px;
-margin-top: 0;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0;
 }
 
 input[type="text"] {
@@ -46,32 +47,38 @@ input[type="text"]:focus-visible {
 .blurbs .section:nth-of-type(2),
 .blurbs .heading,
 .friends {
-display: none !important;
+    display: none !important;
 }
 
 .profile-pic {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .profile-pic img {
-filter: blur(20px);
+    filter: blur(20px);
 }
-
-.about-me-text {
-
-}*/
+*/
 
 .blog-preview,
 .url-info + .table-section,
 .mood > p + p {
-display: none;
+    display: none;
 }
+
 .blurbs > .inner > .section + .section h4 {
-visibility: hidden;
+    visibility: hidden;
 }
+
 .blurbs > .inner > .section + .section h4::before {
-content: 'Test:';
-visibility: visible;
-font-weight: bold;
-color: var(--dark-orange);
+    content: 'Test:';
+    visibility: visible;
+    font-weight: bold;
+    color: var(--dark-orange);
+}
+
+.blurbs .about-me {
+    font-size: 32px;
+    background: linear-gradient(#953, #E60);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
