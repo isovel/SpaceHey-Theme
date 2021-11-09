@@ -70,7 +70,7 @@ input[type="text"]:focus-visible {
 }
 
 .blurbs > .inner > .section + .section h4::before {
-    content: 'Test:';
+    content: 'About you:';
     visibility: visible;
     font-weight: bold;
     color: var(--dark-orange);
@@ -80,6 +80,14 @@ input[type="text"]:focus-visible {
     font-size: 32px;
     font-weight: bold;
     background: linear-gradient(90deg, #953, #E60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blurbs .about-you {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(270deg, #953, #E60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
