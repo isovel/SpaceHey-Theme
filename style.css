@@ -91,3 +91,8 @@ input[type="text"]:focus-visible {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.profile .friends .person p {
+    overflow-wrap: normal;
+    text-overflow: ellipsis;
+}
