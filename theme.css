@@ -1,0 +1,308 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik&display=swap);
+@import url(https://toastythetoaster.github.io/SpaceHey-Theme/colors.css);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik';
+}
+
+body {
+  background: var(--sand-1);
+}
+
+nav, main, footer {
+  flex-direction: column;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+nav {
+  border: 1px solid var(--blue-6);
+  box-shadow: var(--blue-4) 0px 0px 10px 0px;
+}
+
+main, footer {
+  background-color: var(--sand-2);
+  color: var(--sand-12);
+  border: 1px solid var(--sand-6);
+  box-shadow: var(--sand-4) 0px 0px 10px 0px;
+}
+
+main {
+  padding: 16px;
+}
+
+main .left, main .right {
+  padding: 0;
+}
+
+nav .top {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--blue-3);
+}
+
+nav .top div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+nav .top div form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+nav .links {
+  background-color: var(--blue-1);
+}
+
+nav .links li:not(:last-child)::after, footer .links li:not(:last-child)::after {
+  color: var(--sand-12);
+}
+
+a {
+  color: var(--blue-11);
+}
+
+a:hover {
+  color: var(--blue-12);
+  text-decoration: none;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 8px auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 16px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  flex: 6;
+  gap: 16px;
+}
+
+.col:first-of-type {
+  flex: 4;
+}
+
+.edit-link {
+  margin: 0;
+}
+
+.blog-preview,
+.url-info + .table-section,
+.mood > p + p {
+    display: none;
+}
+
+.profile-info {
+  background: var(--blue-1);
+  border: 1px solid var(--blue-6);
+  border-radius: 8px;
+  color: var(--blue-11);
+}
+
+.profile h1 {
+  margin: 0;
+}
+
+.general-about .profile-pic {
+  margin-bottom: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile .mood p {
+  margin: 0;
+}
+
+.profile .contact, .profile .url-info, .profile .table-section, .setting-section, .home-actions {
+  margin: 0;
+}
+
+.profile .blurbs .section h4 {
+  color: var(--red-11);
+}
+
+.profile div.contact {
+  display: block !important;
+}
+
+.profile .contact, .profile .url-info, .profile .table-section, .setting-section, .home-actions {
+  background-color: var(--sand-1);
+  border: 1px solid var(--sand-6);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile .contact .heading, .profile .table-section .heading, .setting-section .heading, .home-actions .heading {
+  background-color: var(--sand-1);
+  color: var(--sand-12);
+  padding: 8px;
+  border-bottom: 1px solid var(--sand-6);
+}
+
+.profile .contact .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.profile .contact .f-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 8px;
+  margin: 0;
+}
+
+.profile .contact .f-row .f-col a {
+  width: fit-content;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profile .url-info {
+  padding: 8px;
+}
+
+table.details-table, .details-table tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-table tr {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid var(--sand-6);
+}
+
+.details-table tr:last-of-type {
+  border-bottom: none;
+}
+
+.details-table td {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  padding: 0;
+  background-color: inherit;
+}
+
+.table-section .edit-link {
+  margin: 0;
+  padding: 0 8px 8px 8px;
+}
+
+.details-table td:first-child {
+  flex: 2;
+  background-color: inherit;
+}
+
+.profile .blurbs, .profile .profile-info {
+  margin: 0;
+}
+
+.profile .blurbs .heading::before {
+  content: 'iso\'s bio';
+  display: block;
+  color: var(--sand-12);
+}
+
+.profile .blurbs .inner, .profile .friends .inner, .blog-entry .comments .inner, .bulletin .comments .inner, .setting-section .inner {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.profile .blurbs .section {
+  margin: 0;
+}
+
+.profile .blurbs .section:nth-of-type(2) {
+  display: none;
+}
+
+.profile .blurbs .section p, .profile .friends p, .blog-entry .comments p, .bulletin .comments p {
+  margin: 0;
+}
+
+.profile .blurbs, .profile .friends {
+  background-color: var(--sand-1);
+  border: 1px solid var(--sand-6);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile .blurbs .heading, .profile .friends .heading {
+  background-color: var(--sand-1);
+  color: var(--sand-12);
+  padding: 8px;
+  border-bottom: 1px solid var(--sand-6);
+}
+
+.friends .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friends .heading a.more {
+  float: none;
+  margin: 0;
+}
+
+.profile .friends .person img:not(.icon) {
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  max-height: none;
+  max-width: 100%;
+}
+
+.profile .friends .friends-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 16px;
+  padding: 8px;
+}
+
+.profile .friends .person {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+  padding: 0;
+}
+
+.profile .friends .person p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--sand-12);
+}
