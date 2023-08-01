@@ -228,8 +228,12 @@ table.details-table, .details-table tbody {
   margin: 0;
 }
 
+.profile .blurbs .heading {
+  display: none;
+}
+
 .profile .blurbs .heading::before {
-  content: 'iso\'s bio';
+  content: 'isotach\'s bio';
   display: block;
   color: var(--sand-12);
 }
@@ -245,6 +249,10 @@ table.details-table, .details-table tbody {
 }
 
 .profile .blurbs .section:nth-of-type(2) {
+  display: none;
+}
+
+.profile .blurbs .section h4 {
   display: none;
 }
 
