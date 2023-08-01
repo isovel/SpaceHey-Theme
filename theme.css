@@ -228,7 +228,7 @@ table.details-table, .details-table tbody {
   margin: 0;
 }
 
-.profile .blurbs .heading {
+.profile .blurbs .heading h4 {
   display: none;
 }
 
