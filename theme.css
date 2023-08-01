@@ -19,14 +19,14 @@ nav, main, footer {
 
 nav {
   border: 1px solid var(--blue-6);
-  box-shadow: var(--blue-4) 0px 0px 10px 0px;
+  box-shadow: var(--blue-4) 0 0 10px 0;
 }
 
 main, footer {
   background-color: var(--sand-2);
   color: var(--sand-12);
   border: 1px solid var(--sand-6);
-  box-shadow: var(--sand-4) 0px 0px 10px 0px;
+  box-shadow: var(--sand-4) 0 0 10px 0;
 }
 
 main {
@@ -313,4 +313,124 @@ table.details-table, .details-table tbody {
   white-space: nowrap;
   overflow: hidden;
   color: var(--sand-12);
+}
+
+.profile .friends#comments .inner {
+  gap: 8px;
+}
+
+.comments-table {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.comments-table button {
+  padding: 0 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--blue-11);
+}
+
+.comments-table button:hover {
+  color: var(--blue-12);
+}
+
+.comments-table tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comments-table tr {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--blue-6);
+  border-radius: 8px;
+  background-color: var(--blue-1);
+  overflow: hidden;
+}
+
+.comments-table td:first-child, .comments-table td:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.comments-table td:first-child {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+  width: fit-content;
+}
+
+.comments-table td:first-child a:first-child p {
+  color: var(--sand-12);
+}
+
+.comments-table td:first-child a:last-child {
+  width: fit-content;
+  height: fit-content;
+}
+
+.comments-table td:first-child a:last-child img {
+  display: block;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comments-table td:last-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.comments-table td:last-child p:nth-child(1) {
+  order: 0;
+  align-self: flex-start;
+  width: 100%;
+  color: var(--sand-11);
+}
+
+.comments-table td:last-child p:nth-child(2) {
+  order: 1;
+  align-self: flex-start;
+  width: 100%;
+  height: 66%;
+}
+
+.comments-table td:last-child a:nth-child(3) {
+  order: 2;
+}
+
+.comments-table td:last-child a:nth-child(5) {
+  order: 3;
+}
+
+.comments-table .report {
+  order: 4;
+  margin: 0 !important;
+  padding: 0 8px;
+  font-size: 80%;
+}
+
+.comments-table .report a {
+  color: var(--red-11);
+}
+
+.comments-table .report a:hover {
+  color: var(--red-12);
 }
